@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>hdt2</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="HDT2_files/libs/clipboard/clipboard.min.js"></script>
+<script src="HDT2_files/libs/quarto-html/quarto.js"></script>
+<script src="HDT2_files/libs/quarto-html/popper.min.js"></script>
+<script src="HDT2_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="HDT2_files/libs/quarto-html/anchor.min.js"></script>
+<link href="HDT2_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="HDT2_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="HDT2_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="HDT2_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="HDT2_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="hoja-de-trabajo-2" class="level1">
+<h1>Hoja de trabajo 2</h1>
+<section id="diego-franco-20240" class="level3">
+<h3 class="anchored" data-anchor-id="diego-franco-20240">Diego Franco 20240</h3>
+</section>
+<section id="ejercicio-1---preguntas-teóricas" class="level2">
+<h2 class="anchored" data-anchor-id="ejercicio-1---preguntas-teóricas">Ejercicio 1 - Preguntas Teóricas</h2>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section">1.1</h2>
+<section id="cómo-definiría-programación-lineal" class="level3">
+<h3 class="anchored" data-anchor-id="cómo-definiría-programación-lineal">¿Cómo definiría “Programación Lineal”?</h3>
+<p>Es un método matemático y técnica de optimización utilizada para resolver problemas en los que se busca maximizar o minimizar una función lineal sujeta a un conjunto de restricciones también lineales.</p>
+</section>
+<section id="cuáles-son-los-escenarios-típicos-y-los-problemas-del-mundo-real-que-se-pueden-modelar-mediante-la-programación-lineal" class="level3">
+<h3 class="anchored" data-anchor-id="cuáles-son-los-escenarios-típicos-y-los-problemas-del-mundo-real-que-se-pueden-modelar-mediante-la-programación-lineal">¿Cuáles son los escenarios típicos y los problemas del mundo real que se pueden modelar mediante la programación lineal?</h3>
+<p>Entre los escenarios típicos se encuentran: - La maximización de beneficios o minimización de costes en una empresa. - La minimización de pérdidas en una empresa. - La minimización de costes en una empresa. - Asignación de recursos escasos. - Optimización de rutas y transporte.</p>
+<p>Entre otros.</p>
+</section>
+<section id="cómo-contribuye-la-programación-lineal-a-la-toma-de-decisiones-en-diversas-industrias-como-la-fabricación-el-transporte-las-finanzas-y-la-asignación-de-recursos" class="level3">
+<h3 class="anchored" data-anchor-id="cómo-contribuye-la-programación-lineal-a-la-toma-de-decisiones-en-diversas-industrias-como-la-fabricación-el-transporte-las-finanzas-y-la-asignación-de-recursos">¿Cómo contribuye la programación lineal a la toma de decisiones en diversas industrias, como la fabricación, el transporte, las finanzas y la asignación de recursos?</h3>
+<p>La programación lineal contribuye a la toma de decisiones con un enfoque cuantitativo y un enfoque de eficiencia. Con un enfoque cuantitativo, la programación lineal ayuda a los gerentes a tomar decisiones basadas en datos y hechos. Con un enfoque de eficiencia, la programación lineal ayuda a los gerentes a tomar decisiones que maximicen los beneficios o minimicen los costos.</p>
+</section>
+</section>
+<section id="section-1" class="level2">
+<h2 class="anchored" data-anchor-id="section-1">1.2</h2>
+<section id="cómo-definiría-los-componentes-clave-de-un-problema-de-programación-lineal-función-objetivo-variables-de-decisión-y-restricciones" class="level3">
+<h3 class="anchored" data-anchor-id="cómo-definiría-los-componentes-clave-de-un-problema-de-programación-lineal-función-objetivo-variables-de-decisión-y-restricciones">¿Cómo definiría los componentes clave de un problema de programación lineal: función objetivo, variables de decisión y restricciones?</h3>
+<ul>
+<li><p>Funcion Objetivo: Es una expresión matemática lineal que representa el objetivo que se busca maximizar o minimizar en el problema.</p></li>
+<li><p>Variables de decisión: Son las incógnitas que representan las cantidades que el problema busca determinar.</p></li>
+<li><p>Restricciones: Son condiciones que limitan las opciones disponibles para las variables de decisión.</p></li>
+</ul>
+</section>
+<section id="cómo-se-formula-matemáticamente-un-problema-de-programación-lineal" class="level3">
+<h3 class="anchored" data-anchor-id="cómo-se-formula-matemáticamente-un-problema-de-programación-lineal">¿Cómo se formula matemáticamente un problema de programación lineal?</h3>
+<p>Para formular un problema de programación lineal, se debe seguir los siguientes pasos: - Definir las variables de decisión: Identifica las cantidades que deseas determinar en el problema y asigna una variable a cada una de ellas.</p>
+<ul>
+<li><p>Escribir la función objetivo: Establece el objetivo que deseas maximizar o minimizar.</p></li>
+<li><p>Escribir las restricciones: Define las restricciones que limitan las opciones disponibles para las variables de decisión.</p></li>
+<li><p>Establecer las limitaciones de las variables de decisión: Especifica cualquier restricción adicional sobre las variables de decisión, como limitaciones mínimas o máximas.</p></li>
+</ul>
+<p>Y ya se deberia de juntar todo en una sola ecuación.</p>
+</section>
+<section id="cuál-es-la-interpretación-geométrica-de-un-problema-de-programación-lineal-en-dos-dimensiones" class="level3">
+<h3 class="anchored" data-anchor-id="cuál-es-la-interpretación-geométrica-de-un-problema-de-programación-lineal-en-dos-dimensiones">¿Cuál es la interpretación geométrica de un problema de programación lineal en dos dimensiones?</h3>
+<p>La interpretación geométrica se realiza trazando las rectas que representan las restricciones y la función objetivo en el plano cartesiano. Cada restricción define una región factible en el plano en la que las soluciones son posibles y cumplen con las restricciones.</p>
+<p>La región donde todas las restricciones se superponen es la región factible que contiene las soluciones óptimas. Esto se llama “conjunto factible”.</p>
+</section>
+<section id="cómo-se-relacionan-las-regiones-factibles-las-soluciones-óptimas-y-los-puntos-de-esquina-en-la-programación-lineal" class="level3">
+<h3 class="anchored" data-anchor-id="cómo-se-relacionan-las-regiones-factibles-las-soluciones-óptimas-y-los-puntos-de-esquina-en-la-programación-lineal">¿Cómo se relacionan las regiones factibles, las soluciones óptimas y los puntos de esquina en la programación lineal?</h3>
+<p>Las soluciones óptimas son los puntos de esquina de la región factible. Esto significa que la solución óptima se encuentra en uno de los vértices de la región factible. Además de ello podemos encontrar realcion en los siguientes puntos: La región factible es el conjunto de todas las combinaciones posibles de las variables de decisión que cumplen con todas las restricciones del problema. Los puntos de esquina, también conocidos como vértices o soluciones básicas factibles, son los puntos de intersección de las restricciones que definen la región factible. Las soluciones óptimas son aquellas que maximizan o minimizan la función objetivo dentro de la región factible</p>
+</section>
+<section id="qué-es-el-método-gráfico-y-cuándo-es-adecuado-para-resolver-problemas-de-programación-lineal" class="level3">
+<h3 class="anchored" data-anchor-id="qué-es-el-método-gráfico-y-cuándo-es-adecuado-para-resolver-problemas-de-programación-lineal">¿Qué es el método gráfico y cuándo es adecuado para resolver problemas de programación lineal?</h3>
+<p>El método gráfico es un método de solución de problemas de programación lineal que utiliza una representación visual de la región factible para determinar la solución óptima. Este método es adecuado para problemas de programación lineal que tienen dos variables de decisión y que pueden representarse en un plano cartesiano.</p>
+</section>
+</section>
+<section id="ejercicio-2---preguntas-prácticas" class="level2">
+<h2 class="anchored" data-anchor-id="ejercicio-2---preguntas-prácticas">Ejercicio 2 - Preguntas Prácticas</h2>
+</section>
+<section id="section-2" class="level2">
+<h2 class="anchored" data-anchor-id="section-2">2.1</h2>
+<section id="escriba-la-fórmula-de-cada-una-de-las-restricciones-recuerde-incluir-la-restricción-de-no-negatividad" class="level3">
+<h3 class="anchored" data-anchor-id="escriba-la-fórmula-de-cada-una-de-las-restricciones-recuerde-incluir-la-restricción-de-no-negatividad">Escriba la fórmula de cada una de las restricciones, recuerde incluir la restricción de no-negatividad</h3>
+<ul>
+<li>Horas de mano de obra: 2x + 4y ≤ 100</li>
+<li>Unidades de materia prima: 3x + 2y ≤ 120</li>
+<li>Restricción de no-negatividad: x ≥ 0, y ≥ 0</li>
+</ul>
+</section>
+<section id="usando-programación-lineal-determine-cuántas-unidades-de-cada-producto-se-deben-producir-para-maximizar-la-ganancia-y-cumplir-con-las-restricciones-de-recursos." class="level3">
+<h3 class="anchored" data-anchor-id="usando-programación-lineal-determine-cuántas-unidades-de-cada-producto-se-deben-producir-para-maximizar-la-ganancia-y-cumplir-con-las-restricciones-de-recursos.">Usando programación lineal, determine cuántas unidades de cada producto se deben producir para maximizar la ganancia y cumplir con las restricciones de recursos.</h3>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pulp <span class="im">import</span> LpMaximize, LpProblem, LpVariable</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear el problema</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> LpProblem(name<span class="op">=</span><span class="st">"maximize_profit"</span>, sense<span class="op">=</span>LpMaximize)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Definir las variables de decisión</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> LpVariable(name<span class="op">=</span><span class="st">"x"</span>, lowBound<span class="op">=</span><span class="dv">0</span>, cat<span class="op">=</span><span class="st">"Integer"</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> LpVariable(name<span class="op">=</span><span class="st">"y"</span>, lowBound<span class="op">=</span><span class="dv">0</span>, cat<span class="op">=</span><span class="st">"Integer"</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Definir la función objetivo</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>model <span class="op">+=</span> <span class="dv">10</span> <span class="op">*</span> x <span class="op">+</span> <span class="dv">15</span> <span class="op">*</span> y, <span class="st">"Profit"</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Agregar las restricciones</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>model <span class="op">+=</span> <span class="dv">2</span> <span class="op">*</span> x <span class="op">+</span> <span class="dv">4</span> <span class="op">*</span> y <span class="op">&lt;=</span> <span class="dv">100</span>, <span class="st">"Labor_constraint"</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>model <span class="op">+=</span> <span class="dv">3</span> <span class="op">*</span> x <span class="op">+</span> <span class="dv">2</span> <span class="op">*</span> y <span class="op">&lt;=</span> <span class="dv">120</span>, <span class="st">"Material_constraint"</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Restricción de no-negatividad</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>model <span class="op">+=</span> x <span class="op">&gt;=</span> <span class="dv">0</span>, <span class="st">"Nonnegativity_x"</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>model <span class="op">+=</span> y <span class="op">&gt;=</span> <span class="dv">0</span>, <span class="st">"Nonnegativity_y"</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Resolver el problema</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>model.solve()</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Imprimir los resultados</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Unidades de Producto A a producir: </span><span class="sc">{</span>x<span class="sc">.</span>value()<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Unidades de Producto B a producir: </span><span class="sc">{</span>y<span class="sc">.</span>value()<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Ganancia Máxima: $</span><span class="sc">{</span>model<span class="sc">.</span>objective<span class="sc">.</span>value()<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Unidades de Producto A a producir: 34.0
+Unidades de Producto B a producir: 8.0
+Ganancia Máxima: $460.0</code></pre>
+</div>
+</div>
+</section>
+<section id="interpretacion" class="level3">
+<h3 class="anchored" data-anchor-id="interpretacion">Interpretacion</h3>
+<ul>
+<li><p>Unidades de Producto A a producir: 34.0 Esto significa que para maximizar la ganancia, la fábrica debe producir 34 unidades del Producto A.</p></li>
+<li><p>Unidades de Producto B a producir: 8.0 Para lograr la máxima ganancia, la fábrica debe producir 8 unidades del Producto B.</p></li>
+<li><p>Ganancia Máxima: $460.0 La ganancia máxima que la fábrica puede obtener al producir 34 unidades del Producto A y 8 unidades del Producto B es de $460.0.</p></li>
+</ul>
+</section>
+<section id="muestre-una-gráfica-del-feasible-area-mostrando-el-punto-donde-está-su-respuesta" class="level3">
+<h3 class="anchored" data-anchor-id="muestre-una-gráfica-del-feasible-area-mostrando-el-punto-donde-está-su-respuesta">Muestre una gráfica del feasible area mostrando el punto donde está su respuesta</h3>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pulp <span class="im">import</span> LpMaximize, LpProblem, LpVariable, value</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Funciones de las restricciones</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>labor_constraint <span class="op">=</span> <span class="kw">lambda</span> x: (<span class="dv">100</span> <span class="op">-</span> <span class="dv">2</span><span class="op">*</span>x) <span class="op">/</span> <span class="dv">4</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>material_constraint <span class="op">=</span> <span class="kw">lambda</span> x: (<span class="dv">120</span> <span class="op">-</span> <span class="dv">3</span><span class="op">*</span>x) <span class="op">/</span> <span class="dv">2</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Rango de valores para x</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>x_values <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">60</span>, <span class="dv">100</span>)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Valores de las restricciones</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>labor_values <span class="op">=</span> labor_constraint(x_values)</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>material_values <span class="op">=</span> material_constraint(x_values)</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear la gráfica</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>plt.plot(x_values, labor_values, label<span class="op">=</span><span class="st">"2x + 4y ≤ 100"</span>)</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>plt.plot(x_values, material_values, label<span class="op">=</span><span class="st">"3x + 2y ≤ 120"</span>)</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Restricción de no-negatividad</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>plt.axhline(<span class="dv">0</span>, color<span class="op">=</span><span class="st">'black'</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>plt.axvline(<span class="dv">0</span>, color<span class="op">=</span><span class="st">'black'</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Área factible sombreada</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>plt.fill_between(x_values, np.minimum(labor_values, material_values), color<span class="op">=</span><span class="st">'gray'</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear un problema lineal para obtener el valor de maximización</span></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> LpProblem(name<span class="op">=</span><span class="st">"maximize_profit"</span>, sense<span class="op">=</span>LpMaximize)</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> LpVariable(name<span class="op">=</span><span class="st">"x"</span>, lowBound<span class="op">=</span><span class="dv">0</span>, cat<span class="op">=</span><span class="st">"Integer"</span>)</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> LpVariable(name<span class="op">=</span><span class="st">"y"</span>, lowBound<span class="op">=</span><span class="dv">0</span>, cat<span class="op">=</span><span class="st">"Integer"</span>)</span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>model <span class="op">+=</span> <span class="dv">10</span> <span class="op">*</span> x <span class="op">+</span> <span class="dv">15</span> <span class="op">*</span> y, <span class="st">"Profit"</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>model <span class="op">+=</span> <span class="dv">2</span> <span class="op">*</span> x <span class="op">+</span> <span class="dv">4</span> <span class="op">*</span> y <span class="op">&lt;=</span> <span class="dv">100</span>, <span class="st">"Labor_constraint"</span></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>model <span class="op">+=</span> <span class="dv">3</span> <span class="op">*</span> x <span class="op">+</span> <span class="dv">2</span> <span class="op">*</span> y <span class="op">&lt;=</span> <span class="dv">120</span>, <span class="st">"Material_constraint"</span></span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>model <span class="op">+=</span> x <span class="op">&gt;=</span> <span class="dv">0</span>, <span class="st">"Nonnegativity_x"</span></span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>model <span class="op">+=</span> y <span class="op">&gt;=</span> <span class="dv">0</span>, <span class="st">"Nonnegativity_y"</span></span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>model.solve()</span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a><span class="co"># Punto de maximización</span></span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>x_max <span class="op">=</span> value(x)</span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>y_max <span class="op">=</span> value(y)</span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>plt.plot(x_max, y_max, <span class="st">'ro'</span>, label<span class="op">=</span><span class="st">'Maximization Point'</span>)</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Product A'</span>)</span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Product B'</span>)</span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Feasible Area and Maximization Point'</span>)</span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>plt.grid()</span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a>plt.xlim(<span class="dv">0</span>, <span class="dv">50</span>)</span>
+<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a>plt.ylim(<span class="dv">0</span>, <span class="dv">40</span>)</span>
+<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="HDT2_files/figure-html/cell-3-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="section-3" class="level2">
+<h2 class="anchored" data-anchor-id="section-3">2.2</h2>
+<section id="escriba-la-fórmula-de-la-función-que-debe-maximizar" class="level3">
+<h3 class="anchored" data-anchor-id="escriba-la-fórmula-de-la-función-que-debe-maximizar">Escriba la fórmula de la función que debe maximizar</h3>
+<ul>
+<li>Función Objetivo (Maximizar la Ganancia Total):
+<ul>
+<li><ul>
+<li>Maximizar: $1500x_A + $2500x_B + $4000x_C</li>
+</ul></li>
+<li><ul>
+<li>Donde:</li>
+</ul></li>
+<li><span class="math inline">\(x_A\)</span>: cantidad de recursos asignados a la Tarea A</li>
+<li><span class="math inline">\(x_B\)</span>: cantidad de recursos asignados a la Tarea B</li>
+<li><span class="math inline">\(x_C\)</span>: cantidad de recursos asignados a la Tarea C</li>
+</ul></li>
+</ul>
+</section>
+<section id="escriba-la-fórmula-de-cada-una-de-las-restricciones-recuerde-incluir-la-restricción-de-no-negatividad-1" class="level3">
+<h3 class="anchored" data-anchor-id="escriba-la-fórmula-de-cada-una-de-las-restricciones-recuerde-incluir-la-restricción-de-no-negatividad-1">Escriba la fórmula de cada una de las restricciones, recuerde incluir la restricción de no-negatividad</h3>
+<ul>
+<li>Restricciones de Recursos:
+<ul>
+<li>Horas de Trabajo: <span class="math inline">\(2x_A + 3x_B + 5x_C \leq 15\)</span></li>
+<li>Personal: <span class="math inline">\(x_A + 2x_B + 3x_C \leq 10\)</span></li>
+</ul></li>
+<li>Restricción de No-Negatividad:
+<ul>
+<li><span class="math inline">\(x_A \geq 0\)</span></li>
+<li><span class="math inline">\(x_B \geq 0\)</span></li>
+<li><span class="math inline">\(x_C \geq 0\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="determine-las-cantidades-de-asignación-óptima.-interprete-el-resultado" class="level3">
+<h3 class="anchored" data-anchor-id="determine-las-cantidades-de-asignación-óptima.-interprete-el-resultado">Determine las cantidades de asignación óptima. Interprete el resultado</h3>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pulp <span class="im">import</span> LpMaximize, LpProblem, LpVariable</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear el problema</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>prob <span class="op">=</span> LpProblem(<span class="st">"AsignacionRecursos"</span>, LpMaximize)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Definir las variables de decisión</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>x_A <span class="op">=</span> LpVariable(<span class="st">"x_A"</span>, lowBound<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>x_B <span class="op">=</span> LpVariable(<span class="st">"x_B"</span>, lowBound<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>x_C <span class="op">=</span> LpVariable(<span class="st">"x_C"</span>, lowBound<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Definir la función objetivo</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>prob <span class="op">+=</span> <span class="dv">1500</span><span class="op">*</span>x_A <span class="op">+</span> <span class="dv">2500</span><span class="op">*</span>x_B <span class="op">+</span> <span class="dv">4000</span><span class="op">*</span>x_C, <span class="st">"GananciaTotal"</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Definir restricciones de recursos</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>prob <span class="op">+=</span> <span class="dv">2</span><span class="op">*</span>x_A <span class="op">+</span> <span class="dv">3</span><span class="op">*</span>x_B <span class="op">+</span> <span class="dv">5</span><span class="op">*</span>x_C <span class="op">&lt;=</span> <span class="dv">15</span>, <span class="st">"HorasDeTrabajo"</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>prob <span class="op">+=</span> x_A <span class="op">+</span> <span class="dv">2</span><span class="op">*</span>x_B <span class="op">+</span> <span class="dv">3</span><span class="op">*</span>x_C <span class="op">&lt;=</span> <span class="dv">10</span>, <span class="st">"Personal"</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Resolver el problema</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>prob.solve()</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Imprimir resultados</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Asignación óptima de recursos:"</span>)</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Tarea A: </span><span class="sc">{</span>x_A<span class="sc">.</span>varValue<span class="sc">}</span><span class="ss"> unidades"</span>)</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Tarea B: </span><span class="sc">{</span>x_B<span class="sc">.</span>varValue<span class="sc">}</span><span class="ss"> unidades"</span>)</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Tarea C: </span><span class="sc">{</span>x_C<span class="sc">.</span>varValue<span class="sc">}</span><span class="ss"> unidades"</span>)</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Ganancia Total: $</span><span class="sc">{</span>prob<span class="sc">.</span>objective<span class="sc">.</span>value()<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Asignación óptima de recursos:
+Tarea A: 0.0 unidades
+Tarea B: 5.0 unidades
+Tarea C: 0.0 unidades
+Ganancia Total: $12500.0</code></pre>
+</div>
+</div>
+<p>Esto significa que se ha decidido asignar 0 unidades de recursos a la Tarea A y 0 unidades a la Tarea C, mientras que se han asignado 5 unidades de recursos a la Tarea B.</p>
+<p>La ganancia total obtenida con esta asignación es de $12,500.0.</p>
+<p>Esta interpretación implica que, de todas las posibles combinaciones de asignación de recursos dentro de las restricciones dadas, la opción óptima es asignar 5 unidades de recursos a la Tarea B y no asignar recursos a las otras tareas. Esto maximiza la ganancia total y cumple con las restricciones de horas de trabajo y personal disponibles.</p>
+</section>
+<section id="podría-dibujar-la-feasible-region-de-ser-sí-cómo-de-ser-no-por-qué" class="level3">
+<h3 class="anchored" data-anchor-id="podría-dibujar-la-feasible-region-de-ser-sí-cómo-de-ser-no-por-qué">¿Podría dibujar la feasible region? De ser sí, ¿Cómo? De ser no, ¿por qué?</h3>
+<p>No es posible dibujarla fácilmente en un espacio tridimensional, ya que tendríamos dos ejes (horas de trabajo y personal) y una tercera dimensión para la ganancia total.</p>
+</section>
+</section>
+<section id="section-4" class="level2">
+<h2 class="anchored" data-anchor-id="section-4">2.3</h2>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.optimize <span class="im">import</span> linprog</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Coeficientes de la función objetivo (negados ya que linprog resuelve minimización)</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> [<span class="op">-</span><span class="dv">300</span>, <span class="op">-</span><span class="dv">500</span>, <span class="op">-</span><span class="dv">700</span>]</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Coeficientes de las restricciones de materias primas</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>A_eq <span class="op">=</span> [[<span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">3</span>]]</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>b_eq <span class="op">=</span> [<span class="dv">100</span>]</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Coeficientes de las restricciones de mano de obra</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>A_eq.append([<span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">4</span>])</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>b_eq.append(<span class="dv">120</span>)</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Coeficientes de las restricciones de tiempo de máquina</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>A_eq.append([<span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">6</span>])</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>b_eq.append(<span class="dv">150</span>)</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Límites de las variables (no-negatividad)</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>x_bounds <span class="op">=</span> (<span class="dv">0</span>, <span class="va">None</span>)</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>y_bounds <span class="op">=</span> (<span class="dv">0</span>, <span class="va">None</span>)</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>z_bounds <span class="op">=</span> (<span class="dv">0</span>, <span class="va">None</span>)</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Resolver el problema de programación lineal</span></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> linprog(c, A_eq<span class="op">=</span>A_eq, b_eq<span class="op">=</span>b_eq, bounds<span class="op">=</span>[x_bounds, y_bounds, z_bounds], method<span class="op">=</span><span class="st">'simplex'</span>)</span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Imprimir resultados</span></span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Cantidades de producción óptimas:"</span>)</span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Producto A: </span><span class="sc">{</span>result<span class="sc">.</span>x[<span class="dv">0</span>]<span class="sc">:.2f}</span><span class="ss"> unidades"</span>)</span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Producto B: </span><span class="sc">{</span>result<span class="sc">.</span>x[<span class="dv">1</span>]<span class="sc">:.2f}</span><span class="ss"> unidades"</span>)</span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Producto C: </span><span class="sc">{</span>result<span class="sc">.</span>x[<span class="dv">2</span>]<span class="sc">:.2f}</span><span class="ss"> unidades"</span>)</span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Máximo beneficio: $</span><span class="sc">{</span><span class="op">-</span>result<span class="sc">.</span>fun<span class="sc">:.2f}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Cantidades de producción óptimas:
+Producto A: 37.50 unidades
+Producto B: 0.00 unidades
+Producto C: 0.00 unidades
+Máximo beneficio: $11250.00</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>C:\Users\diego\AppData\Local\Temp\ipykernel_24620\3544021723.py:24: DeprecationWarning: `method='simplex'` is deprecated and will be removed in SciPy 1.11.0. Please use one of the HiGHS solvers (e.g. `method='highs'`) in new code.
+  result = linprog(c, A_eq=A_eq, b_eq=b_eq, bounds=[x_bounds, y_bounds, z_bounds], method='simplex')</code></pre>
+</div>
+</div>
+<section id="escriba-la-fórmula-de-la-función-que-debe-maximizar-1" class="level3">
+<h3 class="anchored" data-anchor-id="escriba-la-fórmula-de-la-función-que-debe-maximizar-1">Escriba la fórmula de la función que debe maximizar</h3>
+<p>La función objetivo a maximizar es la suma de los beneficios por unidad de cada producto, negados para que el problema se convierta en una minimización. Por lo tanto, la fórmula sería: -300x - 500y - 700z.</p>
+</section>
+<section id="escriba-la-fórmula-de-cada-una-de-las-restricciones-recuerde-incluir-la-restricción-de-no-negatividad-2" class="level3">
+<h3 class="anchored" data-anchor-id="escriba-la-fórmula-de-cada-una-de-las-restricciones-recuerde-incluir-la-restricción-de-no-negatividad-2">Escriba la fórmula de cada una de las restricciones, recuerde incluir la restricción de no-negatividad</h3>
+<p>Cada restricción se representa como una combinación lineal de las variables de producción (x, y, z) multiplicadas por sus coeficientes correspondientes. Las restricciones de materias primas, mano de obra y tiempo de máquina se representan de la siguiente manera:</p>
+<ul>
+<li>Restricción de materias primas: 2x + y + 3z ≤ 100</li>
+<li>Restricción de mano de obra: 3x + 2y + 4z ≤ 120</li>
+<li>Restricción de tiempo de máquina: 4x + 3y + 6z ≤ 150</li>
+<li>También se añade una restricción de no-negatividad para las variables: x ≥ 0, y ≥ 0, z ≥ 0.</li>
+</ul>
+</section>
+<section id="determine-las-cantidades-de-producción-óptimas-y-el-máximo-beneficio.-interprete-el-resultado" class="level3">
+<h3 class="anchored" data-anchor-id="determine-las-cantidades-de-producción-óptimas-y-el-máximo-beneficio.-interprete-el-resultado">Determine las cantidades de producción óptimas y el máximo beneficio. Interprete el resultado</h3>
+<p>Las cantidades de producción óptimas y el máximo beneficio obtenidos del problema de programación lineal son los siguientes:</p>
+<ul>
+<li>Producto A: 37.50 unidades</li>
+<li>Producto B: 0.00 unidades</li>
+<li>Producto C: 0.00 unidades</li>
+<li>Máximo beneficio: $11250.00</li>
+</ul>
+<p>Esto lo que nos indica es que el producto A tiene un menor costo por unidad en comparación con los otros productos y proporciona un beneficio suficientemente alto en relación con sus requerimientos de recursos.</p>
+<p>Mientras que los productos B y C poseen costos de producción y los beneficios de estos productos no son lo suficientemente favorables para justificar su producción.</p>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
